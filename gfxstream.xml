@@ -156,9 +156,12 @@
     <extensions>
         <extension name="VK_GOOGLE_gfxstream" number="9000" author="GOOGLE" contact="Yilong Li @gnoliyil,Roman Kiryanov @rkir,Lingfeng Yang @frank" supported="vulkan">
             <require>
-                <enum value="1"                                         name="VK_GOOGLE_GFXSTREAM_SPEC_VERSION"/>
-                <enum value="9000"                                      name="VK_GOOGLE_GFXSTREAM_NUMBER"/>
-                <enum value="&quot;VK_GOOGLE_gfxstream&quot;"           name="VK_GOOGLE_GFXSTREAM_EXTENSION_NAME"/>
+                <enum value="1"                                             name="VK_GOOGLE_GFXSTREAM_SPEC_VERSION"/>
+                <enum value="9000"                                          name="VK_GOOGLE_GFXSTREAM_NUMBER"/>
+                <enum value="&quot;VK_GOOGLE_gfxstream&quot;"               name="VK_GOOGLE_GFXSTREAM_EXTENSION_NAME"/>
+                <enum offset="0" extends="VkStructureType"                  name="VK_STRUCTURE_TYPE_IMPORT_COLOR_BUFFER_GOOGLE"/>
+                <enum offset="1" extends="VkStructureType"                  name="VK_STRUCTURE_TYPE_IMPORT_BUFFER_GOOGLE"/>
+                <enum offset="2" extends="VkStructureType"                  name="VK_STRUCTURE_TYPE_IMPORT_PHYSICAL_ADDRESS_GOOGLE"/>
                 <type name="VkImportColorBufferGOOGLE"/>
                 <type name="VkImportBufferGOOGLE"/>
                 <type name="VkImportPhysicalAddressGOOGLE"/>
